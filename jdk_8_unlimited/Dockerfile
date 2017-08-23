@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV ANT_VERSION 1.10.1
 
 ENV ANT_HOME /opt/apache-ant
-ENV PATH ${CATALINA_HOME}/bin:$PATH
+ENV PATH ${ANT_HOME}/bin:$PATH
 
 RUN curl --silent --location --retry 3 \
 		http://archive.apache.org/dist/ant/binaries/apache-ant-${ANT_VERSION}-bin.tar.gz \
